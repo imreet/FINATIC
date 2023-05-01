@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".SIP"
+    android:background="@color/app_bg">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/left_arrow"
+            android:onClick="openTools"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lumpsum Calculator"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Monthly Investment:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/principal_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:background="@drawable/buttoncolor"
+            android:padding="9dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Annual Interest Rate:"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/rate_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextInvestment"
+            android:background="@drawable/buttoncolor"
+            android:padding="9dp"
+            android:layout_marginTop="10dp"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Tenure in Years:"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/time_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextInterest"
+            android:background="@drawable/buttoncolor"
+            android:padding="9dp"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/calculate_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextTenure"
+                android:background="@drawable/buttoncolor"
+                android:padding="9dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginLeft="15dp"
+                android:text="Calculate Lumpsum"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/buttonReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextTenure"
+                android:background="@drawable/buttoncolor"
+                android:padding="9dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginLeft="15dp"
+                android:text="Reset"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/result_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Maturity Amount:"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/acme"
+            android:text="Note: Expected return on Lumpsum is 10%"
+            android:textSize="18sp">
+        </TextView>
+
+    </LinearLayout>
+
+</RelativeLayout>

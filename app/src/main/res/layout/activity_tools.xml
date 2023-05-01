@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    tools:context=".Tools">
+
+    <ImageView
+        android:layout_width="46dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/tool_b"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:text="Calculators and Tools"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="343dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="35dp"
+            android:onClick="openSIP"
+            android:text="SIP Calculator"
+            android:drawableLeft="@drawable/sipicon"
+            android:background="@drawable/buttoncolor"
+            ></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="343dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="240dp"
+            android:layout_marginLeft="35dp"
+            android:text="Lumpsum Calculator"
+            android:onClick="openLumpsum"
+            android:drawableLeft="@drawable/money_bag"
+            android:background="@drawable/buttoncolor"
+            ></Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="343dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="330dp"
+            android:layout_marginLeft="35dp"
+            android:text="Fixed Deposit Calculator"
+            android:onClick="openFD"
+            android:drawableLeft="@drawable/fd"
+            android:background="@drawable/buttoncolor"
+            ></Button>
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomnavview"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottombg"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:elevation="3dp"
+        app:menu="@menu/bottom_menu"
+        />
+
+</RelativeLayout>

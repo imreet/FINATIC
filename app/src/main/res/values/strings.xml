@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">take3</string>
+    <string name="result">Maturity Amount: %s</string>
+
+</resources>
