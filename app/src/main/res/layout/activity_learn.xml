@@ -74,6 +74,7 @@
             android:layout_marginTop="330dp"
             android:layout_marginLeft="35dp"
             android:text="What are Mutual Funds?"
+            android:onClick="openContentpage3"
             android:textAlignment="textStart"
             android:drawableLeft="@drawable/baseline_lightbulb_24"
             android:background="@drawable/learn_bt"

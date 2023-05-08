@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:background="@drawable/learncontent"
+    tools:context=".Contentpage3">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/left_arrow"
+            android:onClick="openLearn"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="46dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/baseline_lightbulb_24"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="69dp"
+        android:layout_marginTop="33dp"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:text="What are Mutual Funds?"/>.
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:text="Mutual funds are a sort of investment product in which money is gathered from various individuals and invested in a wide portfolio of stocks, bonds, and other instruments. A professional fund manager manages the fund, buying and selling assets in order to generate returns for investors.
+Even with a minimal amount of money, mutual funds provide diversification, expert management, and access to a wide range of investment choices.
+"/>
+    </ScrollView>
+
+</RelativeLayout>
