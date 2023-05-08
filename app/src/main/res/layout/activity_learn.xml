@@ -57,6 +57,7 @@
             android:drawableLeft="@drawable/baseline_lightbulb_24"
             android:background="@drawable/learn_bt"
             android:text="What is SIP?"
+            android:onClick="openContentpage2"
             android:textAlignment="textStart"
             android:textColorLink="#EC4747"
             app:strokeColor="#EF1F1F"></Button>

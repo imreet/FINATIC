@@ -45,4 +45,12 @@ public class Learn extends AppCompatActivity {
     public void openContentpage1(View view) {
         startActivity(new Intent(this, Contentpage1.class));
     }
+
+    public void openContentpage2(View view) {
+        startActivity(new Intent(this, Contentpage2.class));
+    }
+
+//    public void openContentpage1(View view) {
+//        startActivity(new Intent(this, Contentpage1.class));
+//    }
 }

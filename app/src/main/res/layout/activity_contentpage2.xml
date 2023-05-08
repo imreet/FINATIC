@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:background="@drawable/learncontent"
+    tools:context=".Contentpage2">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/left_arrow"
+            android:onClick="openLearn"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="46dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/baseline_lightbulb_24"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="69dp"
+        android:layout_marginTop="33dp"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:text="What is SIP?"/>.
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:text="SIP stands for Systematic Investment Plan in the capital market. It is a method of investing in which an investor makes recurring investments into a mutual fund or exchange-traded fund at regular periods, often monthly (ETF) in order to become disciplined in investing.
+SIP enables investors to invest a specified sum of money at predetermined intervals, independent of market conditions. This helps to average out investment costs over time, lowering the impact of market volatility on overall investment.In investing, SIP works as follows: -
+The investor chooses a mutual fund or ETF and establishes a SIP plan with the fund company or broker.
+The investor sets the amount to be invested as well as the frequency with which it will be invested (e.g., Rs. 5,000 per month).
+The SIP amount is automatically taken from the investor's bank account and invested in the selected mutual fund or ETF on the designated date each month.
+Regardless of market conditions, the investor continues to invest the same amount at regular periods.
+The investor collects units of the mutual fund or ETF at various market values over time, resulting in an average cost of investment.
+SIP is a popular investment method for people who wish to invest in the stock market but lack the time or knowledge to watch markets on a regular basis. It is a disciplined approach to investing that helps investors avoid emotional decisions based on short-term market volatility.
+
+"/>
+    </ScrollView>
+
+</RelativeLayout>
