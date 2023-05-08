@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:background="@drawable/learncontent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/left_arrow"
+            android:onClick="openLearn"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="46dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/baseline_lightbulb_24"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="69dp"
+        android:layout_marginTop="33dp"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:text="Difference between Mutual Funds and FD."/>.
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:text="In India, Fixed Deposits (FDs) and Mutual Funds are two famous investing choices.
+Banks and other financial institutions offer FDs, in which you deposit a large sum of money for a set period of time and earn a predefined interest rate. The interest rate on FDs is determined at the time of investment and remains constant throughout the duration of the deposit. Because the primary amount invested is secured and guaranteed by the bank, FDs are regarded as a low-risk investment option. Unfortunately, FD returns are very low and may not keep up with inflation.
+Mutual funds, on the other hand, are investment vehicles that pool money from various individuals and use it to invest in a diverse range of securities such as stocks, bonds, and money market instruments. Professional fund managers administer mutual funds on behalf of investors, making investment decisions. Mutual fund returns are determined by the performance of the portfolio's underlying securities. Mutual funds are considered a greater risk investment alternative than FDs because there is no guaranteed return or principal protection.
+In essence, the key distinction between FDs and Mutual Funds is that FDs provide guaranteed returns on invested funds but at a lower rate of return, whilst Mutual Funds provide potentially larger returns but at a higher risk. Before deciding between FDs and Mutual Funds, investors should consider their risk tolerance and investment objectives.
+"/>
+    </ScrollView>
+
+</RelativeLayout>

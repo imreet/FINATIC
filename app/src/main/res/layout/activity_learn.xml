@@ -92,6 +92,7 @@
             android:layout_marginTop="420dp"
             android:layout_marginLeft="35dp"
             android:text="Difference between Mutual Funds and FD"
+            android:onClick="openContentpage4"
             android:drawableLeft="@drawable/baseline_lightbulb_24"
             android:background="@drawable/learn_bt"
             ></Button>
